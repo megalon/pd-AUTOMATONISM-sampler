@@ -9,7 +9,7 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 
 * Negative pitch values play the sample in reverse.
 
-* Preset buttons above the pitch slider set the pitch to the corresponding value.
+* Preset buttons above the pitch slider set the pitch to the corresponding speed multiplier.
 
 * When the sample reaches it's end, a trigger is sent out of the END_TRIG outlet.
 
@@ -43,6 +43,14 @@ Do you have the pitch or sample length set to 0?
 Did the sample fail to load? (Check the pd console to see why. Only WAV and AIFF are supported in PD)
 
 Does your sample actually contain any sound?
+
+## Do mono samples work?
+
+Yup. Mono samples will only play out of the left outlet, OUT_L.
+
+## Why are files over 4000000 samples truncated?
+
+This is just how PD loads samples into arrays. It's over 90 seconds (at 44.1 kHz), so it shouldn't be a problem for most. Some people have gotten around this in other projects, but it wasn't the purpose of this one.
 
 ## Why don't you show the waveform in the GUI?
 
