@@ -31,13 +31,13 @@ Then we need to create the subpatch to load the SAMPLER module into the main win
 
 ![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/sampler-open.gif)
 
-That's it!
-
 # FAQ
 
 ## Why can't I hear anything?
 Do you have the pitch or sample length set to 0?
+
 Did the sample fail to load? (Check the pd console to see why. Only WAV and AIFF are supported in PD)
+
 Does your sample actually contain any sound?
 
 ## Why don't you show the waveform in the GUI?
