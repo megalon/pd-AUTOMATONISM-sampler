@@ -2,7 +2,7 @@
 
 ![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/AUTOMATONISM-sampler-image.PNG)
 
-This SAMPLER module is a stereo sampler that will open any audio file that Pure Data supports (WAV and AIFF), at any sample rate.
+This module is a stereo sampler built for AUTOMATONISM that fully supports state saving, parameter nudging, and works like any other AUTOMATONISM module.
 
 **FEATURES:**
 * Variable pitch, length, and start position.
@@ -10,6 +10,8 @@ This SAMPLER module is a stereo sampler that will open any audio file that Pure 
 * Negative pitch values play the sample in reverse.
 
 * When the sample reaches it's end, a trigger is sent out of the END_TRIG outlet.
+
+* Open any audio file that Pure Data supports (WAV and AIFF), at any sample rate.
 
 * The path to the sample file is stored within the statesave (when you press space), so it should reload the sample when AUTOMATONISM starts up... Unless you move the sample file!
 
