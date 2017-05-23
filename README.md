@@ -9,6 +9,8 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 
 * Negative pitch values play the sample in reverse.
 
+* Preset buttons above the pitch slider set the pitch to the corresponding value.
+
 * When the sample reaches it's end, a trigger is sent out of the END_TRIG outlet.
 
 * Open any audio file that Pure Data supports (WAV and AIFF), at any sample rate.
