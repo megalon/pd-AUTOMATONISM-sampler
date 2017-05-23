@@ -2,7 +2,7 @@
 
 ![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/AUTOMATONISM-sampler-image.PNG)
 
-This module is a stereo sampler built for AUTOMATONISM that fully supports state saving, parameter nudging, and works like any other AUTOMATONISM module.
+This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonism.com/) that fully supports state saving, parameter nudging, and works like any other AUTOMATONISM module.
 
 **FEATURES:**
 * Variable pitch, length, and start position.
