@@ -4,7 +4,7 @@
 
 This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonism.com/) that fully supports state saving, parameter nudging, and works like any other AUTOMATONISM module.
 
-**FEATURES:**
+## FEATURES:
 * Variable pitch, length, and start position.
 
 * Negative pitch values play the sample in reverse.
@@ -17,7 +17,11 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 
 * The path to the sample file is stored within the statesave (when you press space), so it should reload the sample when AUTOMATONISM starts up... Unless you move the sample file!
 
-**UPDATE:**
+## UPDATES:
+
+**2017-5-24:** 
+* Added support for file paths that have spaces in them.
+
 **2017-5-23:** 
 * Added trigger indicator next to TRIG inlet to show when a trigger has been recieved.
 * Fixed param-nudge for the PITCH slider. It should now nudge like any other slider.
