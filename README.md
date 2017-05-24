@@ -17,6 +17,8 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 
 * The path to the sample file is stored within the statesave (when you press space), so it should reload the sample when AUTOMATONISM starts up... Unless you move the sample file!
 
+**UPDATE: 2017-5-23:** Added trigger indicator next to TRIG inlet to show when a trigger has been recieved.
+
 # How do I install it?
 
 Download **sampler.pd**, **sampler-help.pd**, and **sampler-EASY-COPY-PASTE.pd** from this github repo.
