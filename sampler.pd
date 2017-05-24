@@ -1,11 +1,11 @@
-#N canvas 519 172 1256 819 10;
+#N canvas 508 92 1256 819 10;
 #X obj 204 109 cnv 5 5 5 empty empty LENGTH 0 0 0 8 -262144 -120682
 0;
 #X obj 124 126 cnv 5 5 5 empty empty SAMPLER 0 0 0 12 -262144 -66577
 0;
 #X obj 105 308 cnv 5 5 5 empty empty OUT_L 0 0 0 8 -262144 -66577 0
 ;
-#X obj 185 126 cnv 5 5 5 empty \$0-instance-num 3 0 0 0 12 -262144
+#X obj 185 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
 #X obj 252 109 cnv 5 5 5 empty empty START 0 0 0 8 -262144 -120682
 0;
@@ -22,11 +22,11 @@
 #X obj 670 910 *~;
 #X obj 669 967 +~;
 #X obj 107 188 hsl 128 15 -2 2 0 1 \$0-sampler-pitch-s \$0-sampler-pitch-r
-PITCH 133 7 0 10 -262144 -1 -1 9525 1;
+PITCH 133 7 0 10 -262144 -1 -1 6350 1;
 #X obj 107 203 hsl 128 15 0 127 0 1 \$0-sampler-length-s \$0-sampler-length-r
-LENGTH 133 7 0 10 -262144 -1 -1 8000 1;
+LENGTH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 107 218 hsl 128 15 0 127 0 0 \$0-sampler-start-s \$0-sampler-start-r
-START 133 7 0 10 -262144 -1 -1 1900 1;
+START 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 670 711 phasor~;
 #X text 73 385 Get path to sample;
 #X text 510 963 Sample start position;
@@ -43,7 +43,7 @@ START 133 7 0 10 -262144 -1 -1 1900 1;
 #X obj 671 827 *~;
 #X text 530 679 Loop or one shot;
 #X obj 222 138 tgl 15 1 \$0-loop-on-off-s \$0-loop-on-off-r LOOP 18
-7 0 10 -204800 -1 -1 1 1;
+7 0 10 -204800 -1 -1 0 1;
 #X obj 521 118 s \$0-bang;
 #N canvas 30 543 506 343 open 0;
 #X obj 175 57 openpanel;
@@ -79,7 +79,7 @@ START 133 7 0 10 -262144 -1 -1 1900 1;
 #X obj 259 514 s \$0-file-size;
 #X obj 688 1026 r \$0-file-size;
 #X obj 736 1176 outlet~;
-#N canvas 0 101 1106 875 state-saving-multiple-instances 1;
+#N canvas 0 101 1106 875 state-saving-multiple-instances 0;
 #X obj 683 25 loadbang;
 #X obj 739 399 textfile;
 #X msg 979 352 rewind;
@@ -296,7 +296,7 @@ a single symbol.;
 #X obj 587 296 s \$0-instance-num;
 #X obj 587 248 makefilename %d;
 #X msg 587 273 label \$1;
-#N canvas 607 137 1205 745 state-saving-via-preset-manager-module 1
+#N canvas 607 137 1205 745 state-saving-via-preset-manager-module 0
 ;
 #X obj 690 337 textfile;
 #X msg 931 294 rewind;
@@ -371,7 +371,7 @@ a single symbol.;
 #X msg 757 397 1, f 2;
 #X msg 727 397 0, f 2;
 #X obj 690 686 s \$0-filename-r;
-#N canvas 640 221 748 742 list-to-symbol 1;
+#N canvas 640 221 748 742 list-to-symbol 0;
 #X obj 85 190 list split 1;
 #X obj 85 77 until;
 #X obj 85 12 inlet;
@@ -828,11 +828,11 @@ a single symbol.;
 #X obj 175 308 cnv 5 5 5 empty empty OUT_R 0 0 0 8 -262144 -66577 0
 ;
 #X obj 107 248 hsl 128 15 0 127 0 1 \$0-sampler-length-att-s \$0-sampler-length-att-r
-LENGTH 133 7 0 10 -158136 -1 -1 12700 1;
+LENGTH 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 107 263 hsl 128 15 0 127 0 1 \$0-sampler-start-att-s \$0-sampler-start-att-r
-START 133 7 0 10 -158136 -1 -1 12700 1;
+START 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 107 233 hsl 128 15 0 127 0 1 \$0-sampler-pitch-att-s \$0-sampler-pitch-att-r
-PITCH 133 7 0 10 -158136 -1 -1 8800 1;
+PITCH 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 670 574 *~;
 #X obj 679 76 inlet~ PITCH;
 #X obj 679 98 throw~ \$0-sampler-PITCH;
@@ -973,7 +973,7 @@ PITCH 133 7 0 10 -158136 -1 -1 8800 1;
 #X obj 27 641 outlet;
 #X obj 98 20 inlet~ pitch;
 #X msg 98 100 1;
-#X obj 98 126 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 98 126 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 298 97 0;
 #X obj 98 73 threshold~ 0.0001 0 -0.0001 0;
@@ -1097,7 +1097,6 @@ is being reset \, then 5ms later it turns them back on.;
 #X text 498 1105 Finally play the sample;
 #X text 318 120 Bang resets the phasor~ to 0;
 #X obj 807 578 r \$0-loop-on-off-s;
-#X text 76 956 _megalon_ 2017;
 #X text 35 990 This is a stereo sample player designed for AUTOMATONISM.
 ;
 #X obj 521 96 threshold~ 0.99 0 1 0;
@@ -1189,10 +1188,11 @@ SAMPLE_RATE 65 7 0 10 -262144 -1 -1 44100 256;
 #X obj 104 118 bng 15 50 50 0 empty \$0-trig-r empty 17 7 0 10 -262144
 -226533 -1;
 #X obj 591 118 s \$0-trig-r;
+#X text 76 956 _megalon_ 2017 v1.2;
 #X connect 7 0 33 0;
 #X connect 8 0 61 0;
 #X connect 9 0 36 0;
-#X connect 10 0 117 0;
+#X connect 10 0 116 0;
 #X connect 10 1 9 1;
 #X connect 11 0 70 0;
 #X connect 11 0 71 0;
@@ -1204,7 +1204,7 @@ SAMPLE_RATE 65 7 0 10 -262144 -1 -1 44100 256;
 #X connect 29 0 12 0;
 #X connect 33 0 8 0;
 #X connect 35 0 11 0;
-#X connect 37 0 124 0;
+#X connect 37 0 123 0;
 #X connect 39 0 11 1;
 #X connect 41 0 43 0;
 #X connect 43 0 44 0;
@@ -1234,8 +1234,8 @@ SAMPLE_RATE 65 7 0 10 -262144 -1 -1 44100 256;
 #X connect 77 0 78 2;
 #X connect 77 1 74 0;
 #X connect 78 0 29 1;
-#X connect 78 1 97 0;
-#X connect 78 1 119 0;
+#X connect 78 1 96 0;
+#X connect 78 1 118 0;
 #X connect 81 0 85 0;
 #X connect 81 1 73 0;
 #X connect 81 2 82 0;
@@ -1245,25 +1245,25 @@ SAMPLE_RATE 65 7 0 10 -262144 -1 -1 44100 256;
 #X connect 86 0 81 0;
 #X connect 86 1 75 0;
 #X connect 90 0 77 0;
-#X connect 93 0 32 0;
-#X connect 93 0 126 0;
-#X connect 94 0 93 0;
+#X connect 92 0 32 0;
+#X connect 92 0 125 0;
+#X connect 93 0 92 0;
+#X connect 96 0 97 0;
 #X connect 97 0 98 0;
-#X connect 98 0 99 0;
-#X connect 101 0 32 0;
-#X connect 102 0 111 2;
-#X connect 103 0 111 3;
-#X connect 104 0 111 4;
-#X connect 105 0 111 5;
-#X connect 106 0 111 6;
-#X connect 107 0 111 7;
-#X connect 108 0 111 1;
-#X connect 109 0 111 8;
-#X connect 110 0 111 0;
+#X connect 100 0 32 0;
+#X connect 101 0 110 2;
+#X connect 102 0 110 3;
+#X connect 103 0 110 4;
+#X connect 104 0 110 5;
+#X connect 105 0 110 6;
+#X connect 106 0 110 7;
+#X connect 107 0 110 1;
+#X connect 108 0 110 8;
+#X connect 109 0 110 0;
+#X connect 112 0 113 0;
 #X connect 113 0 114 0;
-#X connect 114 0 115 0;
-#X connect 116 0 121 0;
-#X connect 117 0 9 0;
-#X connect 121 0 117 0;
-#X connect 124 0 56 0;
+#X connect 115 0 120 0;
+#X connect 116 0 9 0;
+#X connect 120 0 116 0;
+#X connect 123 0 56 0;
 #X coords 0 -1 1 1 180 215 2 100 100;
