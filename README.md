@@ -1,6 +1,6 @@
 # A sampler module for AUTOMATONISM
 
-![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/AUTOMATONISM-sampler-image.PNG)
+![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/AUTOMATONISM-sampler-image2.PNG)
 
 This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonism.com/) that fully supports state saving, parameter nudging, and works like any other AUTOMATONISM module.
 
