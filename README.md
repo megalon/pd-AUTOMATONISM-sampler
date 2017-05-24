@@ -20,7 +20,7 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 **UPDATE:**
 **2017-5-23:** 
 * Added trigger indicator next to TRIG inlet to show when a trigger has been recieved.
-* Fixed param-nudge for the PITCH slider. It should now work nudge like any other slider.
+* Fixed param-nudge for the PITCH slider. It should now nudge like any other slider.
 
 # How do I install it?
 
