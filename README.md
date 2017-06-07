@@ -1,6 +1,6 @@
 # A sampler module for AUTOMATONISM
 
-![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/AUTOMATONISM-sampler-image2.PNG)
+![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/AUTOMATONISM-sampler-image3.PNG)
 
 This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonism.com/) that fully supports state saving, parameter nudging, and works like any other AUTOMATONISM module.
 
@@ -18,11 +18,14 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 * The path to the sample file is stored within the statesave (when you press space), so it should reload the sample when AUTOMATONISM starts up... Unless you move the sample file!
 
 ## UPDATES:
+**2017-6-7: v1.3**
+* Added filename display to GUI. Spaces in the filename are replaced with underscores in the display, since it uses a canvas label. Filenames that are too big to fit on screen are truncated and have "..." placed at the beginning.
+* Added trigger indicator next to the END_TRIG outlet.
 
-**2017-5-24:** 
+**2017-5-24: v1.2** 
 * Added support for file paths that have spaces in them.
 
-**2017-5-23:** 
+**2017-5-23: v1.1** 
 * Added trigger indicator next to TRIG inlet to show when a trigger has been recieved.
 * Fixed param-nudge for the PITCH slider. It should now nudge like any other slider.
 
