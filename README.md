@@ -17,6 +17,8 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 
 * The path to the sample file is stored within the statesave (when you press space), so it should reload the sample when AUTOMATONISM starts up... Unless you move the sample file!
 
+[Here is an image of the patch if you would like to see what it looks inside.](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/internals-preview.png)
+
 ## UPDATES:
 **2017-6-7: v1.3**
 * Added filename display to GUI. Spaces in the filename are replaced with underscores in the display, since it uses a canvas label. Filenames that are too big to fit on screen are truncated and have "..." placed at the beginning.
