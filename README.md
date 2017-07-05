@@ -20,6 +20,9 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 [Here is an image of the patch if you would like to see what it looks inside.](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/internals-preview.png)
 
 ## UPDATES:
+**2017-7-4: pd-extended version**
+* Added a pd-extended compatable version. Simply follow all of the instructions on here, but delete "sampler.pd" and rename "sampler-for-extended.pd" to "sampler.pd"
+
 **2017-6-7: v1.3**
 * Added filename display to GUI. Spaces in the filename are replaced with underscores in the display, since it uses a canvas label. Filenames that are too big to fit on screen are truncated and have "..." placed at the beginning.
 * Added trigger indicator next to the END_TRIG outlet.
@@ -34,7 +37,9 @@ This module is a stereo sampler built for [AUTOMATONISM](https://www.automatonis
 # How do I install it?
 
 Download **sampler.pd**, **sampler-help.pd**, and **sampler-EASY-COPY-PASTE.pd** from this github repo.
- 
+
+**Note:** For the pd-extended version, delete "sampler.pd" and rename "sampler-for-extended.pd" to "sampler.pd", then continue with these instructions.
+
 Within the *AUTOMATONISM_1.1* folder, there is another folder called *patch_editor_abs*. Drop the files "sampler.pd" and "sampler-help.pd" into this folder.
 
 ![](https://raw.githubusercontent.com/megalon/pd-AUTOMATONISM-sampler/master/images/sampler-location.PNG)
